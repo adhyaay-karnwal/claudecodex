@@ -3,7 +3,7 @@ services:
     build: ./backend
     container_name: claudecodex_backend
     environment:
-      - GITHUB_CLIENT_SECRET=[GITHUB_CLIENT_SECRET]
+      - GITHUB_CLIENT_SECRET=e8e51490a1d965c9d6e929722cbcd52de5253f45
     ports:
       - "3000:3000"
     networks:
@@ -15,8 +15,8 @@ services:
     ports:
       - "80:80"
     environment:
-      - VITE_GITHUB_CLIENT_ID=[VITE_GITHUB_CLIENT_ID]
-      - VITE_GITHUB_REDIRECT_URI=[VITE_GITHUB_REDIRECT_URI]
+      - VITE_GITHUB_CLIENT_ID=Ov23liW25C66Mmn8sFfW
+      - VITE_GITHUB_REDIRECT_URI=https://claudecodex-karnwal.up.railway.app
       - VITE_API_URL=http://backend:3000/api
     depends_on:
       - backend
